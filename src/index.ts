@@ -12,5 +12,5 @@ window.onload = () =>{
     console.log("welcome");
     $( ".input" ).append( `<p>${sum(2,5)}</p>`);
     let barchart1 = new Barchart(460, 460, "input")
-    //barchart1.createChart();
+    barchart1.createChart();
 }

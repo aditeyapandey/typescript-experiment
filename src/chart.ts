@@ -71,7 +71,7 @@ export class Barchart {
         })
         .append("circle")
         .attr("r", 7)
-        .style("fill", "yellow")
+        .style("fill", "blue")
         .attr("stroke", "black")
         .style("stroke-width", 2);
     });
