@@ -13,7 +13,6 @@ export class Barchart {
   }
 
   createChart() {
-      console.log(this.containerElement)
     const svg = d3
       .select("."+this.containerElement)
       .append("svg")
@@ -72,7 +71,7 @@ export class Barchart {
         })
         .append("circle")
         .attr("r", 7)
-        .style("fill", "#69b3a2")
+        .style("fill", "yellow")
         .attr("stroke", "black")
         .style("stroke-width", 2);
     });
