@@ -62685,7 +62685,6 @@ function () {
   Barchart.prototype.createChart = function () {
     var _this = this;
 
-    console.log(this.containerElement);
     var svg = d3.select("." + this.containerElement).append("svg").attr("width", this.width).attr("height", this.height).append("g").attr("transform", "translate(40,0)"); // bit of margin on the left = 40
 
     d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_dendrogram.json").then(function (data) {
@@ -62705,7 +62704,7 @@ function () {
 
       svg.selectAll("g").data(root.descendants()).join("g").attr("transform", function (d) {
         return "translate(" + d.y + "," + d.x + ")";
-      }).append("circle").attr("r", 7).style("fill", "#69b3a2").attr("stroke", "black").style("stroke-width", 2);
+      }).append("circle").attr("r", 7).style("fill", "yellow").attr("stroke", "black").style("stroke-width", 2);
     });
   };
 
@@ -62733,9 +62732,9 @@ function sum(x, y) {
 }
 
 window.onload = function () {
+  console.log("welcome");
   $(".input").append("<p>" + sum(2, 5) + "</p>");
-  var barchart1 = new chart_1.Barchart(460, 460, "input");
-  barchart1.createChart();
+  var barchart1 = new chart_1.Barchart(460, 460, "input"); //barchart1.createChart();
 };
 },{"core-js/stable":"../node_modules/core-js/stable/index.js","regenerator-runtime/runtime":"../node_modules/regenerator-runtime/runtime.js","jquery":"../node_modules/jquery/dist/jquery.js","./chart":"chart.ts"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -62765,7 +62764,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54444" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61796" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
