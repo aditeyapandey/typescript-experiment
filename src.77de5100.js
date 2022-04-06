@@ -62704,7 +62704,7 @@ function () {
 
       svg.selectAll("g").data(root.descendants()).join("g").attr("transform", function (d) {
         return "translate(" + d.y + "," + d.x + ")";
-      }).append("circle").attr("r", 7).style("fill", "yellow").attr("stroke", "black").style("stroke-width", 2);
+      }).append("circle").attr("r", 7).style("fill", "blue").attr("stroke", "black").style("stroke-width", 2);
     });
   };
 
@@ -62734,7 +62734,8 @@ function sum(x, y) {
 window.onload = function () {
   console.log("welcome");
   $(".input").append("<p>" + sum(2, 5) + "</p>");
-  var barchart1 = new chart_1.Barchart(460, 460, "input"); //barchart1.createChart();
+  var barchart1 = new chart_1.Barchart(460, 460, "input");
+  barchart1.createChart();
 };
 },{"core-js/stable":"../node_modules/core-js/stable/index.js","regenerator-runtime/runtime":"../node_modules/regenerator-runtime/runtime.js","jquery":"../node_modules/jquery/dist/jquery.js","./chart":"chart.ts"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

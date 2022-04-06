@@ -36427,7 +36427,7 @@ function () {
 
       svg.selectAll("g").data(root.descendants()).join("g").attr("transform", function (d) {
         return "translate(" + d.y + "," + d.x + ")";
-      }).append("circle").attr("r", 7).style("fill", "yellow").attr("stroke", "black").style("stroke-width", 2);
+      }).append("circle").attr("r", 7).style("fill", "blue").attr("stroke", "black").style("stroke-width", 2);
     });
   };
 
